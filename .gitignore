@@ -1,0 +1,69 @@
+# =====================
+# Build / CMake
+# =====================
+build/
+out/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+*.cmake
+*.ninja
+compile_commands.json
+
+# =====================
+# VCPKG (локальная сборка)
+# =====================
+vcpkg/
+vcpkg_installed/
+vcpkg/buildtrees/
+vcpkg/packages/
+vcpkg/downloads/
+vcpkg/vcpkg.exe
+vcpkg/built-in-baseline.json
+
+# =====================
+# Node / Electron
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+out-electron/
+.DS_Store
+
+# =====================
+# Env
+# =====================
+.env
+.env.local
+
+# =====================
+# IDE (ВАЖНО для Visual Studio)
+# =====================
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.opendb
+
+# =====================
+# Visual Studio / MSBuild мусор
+# =====================
+*.vcxproj.user
+*.vcxproj.filters
+ipch/
+*.ipch
+Debug/
+Release/
+x64/
+x86/
+
+# =====================
+# Logs
+# =====================
+*.log

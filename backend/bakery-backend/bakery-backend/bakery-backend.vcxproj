@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{54b4ac91-9a09-480d-b8ca-72b547a47e9a}</ProjectGuid>
+    <RootNamespace>bakerybackend</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="auth\auth_controller.cpp" />
+    <ClCompile Include="auth\auth_service.cpp" />
+    <ClCompile Include="auth\auth_utils.cpp" />
+    <ClCompile Include="bakery-backend.cpp" />
+    <ClCompile Include="cart\cart_controller.cpp" />
+    <ClCompile Include="cart\cart_service.cpp" />
+    <ClCompile Include="dashboard\dashboard_controller.cpp" />
+    <ClCompile Include="dashboard\dashboard_service.cpp" />
+    <ClCompile Include="db\auth\auth_queries.cpp" />
+    <ClCompile Include="db\cart\cart_queries.cpp" />
+    <ClCompile Include="db\dashboard\dashboard_queries.cpp" />
+    <ClCompile Include="db\db.cpp" />
+    <ClCompile Include="db\dictionaries\dictionaries_queries.cpp" />
+    <ClCompile Include="db\products\products_queries.cpp" />
+    <ClCompile Include="db\sales\sales_queries.cpp" />
+    <ClCompile Include="db\users\users_queries.cpp" />
+    <ClCompile Include="db\warehouse\warehouse_queries.cpp" />
+    <ClCompile Include="dictionaries\dictionaries_controller.cpp" />
+    <ClCompile Include="dictionaries\dictionaries_service.cpp" />
+    <ClCompile Include="products\products_controller.cpp" />
+    <ClCompile Include="products\products_service.cpp" />
+    <ClCompile Include="sales\sales_controller.cpp" />
+    <ClCompile Include="sales\sales_service.cpp" />
+    <ClCompile Include="server\server.cpp" />
+    <ClCompile Include="users\users_controller.cpp" />
+    <ClCompile Include="users\users_service.cpp" />
+    <ClCompile Include="warehouse\warehouse_controller.cpp" />
+    <ClCompile Include="warehouse\warehouse_service.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="auth\auth_controller.h" />
+    <ClInclude Include="auth\auth_response_model.h" />
+    <ClInclude Include="auth\auth_service.h" />
+    <ClInclude Include="auth\auth_utils.h" />
+    <ClInclude Include="auth\login_body_model.h" />
+    <ClInclude Include="auth\register_body_model.h" />
+    <ClInclude Include="cart\cart_controller.h" />
+    <ClInclude Include="cart\cart_item_model.h" />
+    <ClInclude Include="cart\cart_service.h" />
+    <ClInclude Include="common\errors.h" />
+    <ClInclude Include="common\string_utils.h" />
+    <ClInclude Include="common\utils.h" />
+    <ClInclude Include="dashboard\dashboard_activity_model.h" />
+    <ClInclude Include="dashboard\dashboard_controller.h" />
+    <ClInclude Include="dashboard\dashboard_service.h" />
+    <ClInclude Include="dashboard\dashboard_summary_model.h" />
+    <ClInclude Include="db\auth\auth_queries.h" />
+    <ClInclude Include="db\cart\cart_queries.h" />
+    <ClInclude Include="db\dashboard\dashboard_queries.h" />
+    <ClInclude Include="db\db.h" />
+    <ClInclude Include="db\dictionaries\dictionaries_queries.h" />
+    <ClInclude Include="db\products\products_queries.h" />
+    <ClInclude Include="db\sales\sales_queries.h" />
+    <ClInclude Include="db\users\users_queries.h" />
+    <ClInclude Include="db\warehouse\warehouse_queries.h" />
+    <ClInclude Include="dictionaries\dictionaries_controller.h" />
+    <ClInclude Include="dictionaries\dictionaries_service.h" />
+    <ClInclude Include="manufacturers\manufacturer_add_model.h" />
+    <ClInclude Include="models\add_stock_model.h" />
+    <ClInclude Include="models\ingredients_model.h" />
+    <ClInclude Include="models\manufacturer_model.h" />
+    <ClInclude Include="models\product_item_model.h" />
+    <ClInclude Include="models\remove_stock_model.h" />
+    <ClInclude Include="models\role_model.h" />
+    <ClInclude Include="models\sales_item_model.h" />
+    <ClInclude Include="models\UOM_model.h" />
+    <ClInclude Include="models\user_model.h" />
+    <ClInclude Include="models\warehouse_item_model.h" />
+    <ClInclude Include="products\products_controller.h" />
+    <ClInclude Include="products\products_service.h" />
+    <ClInclude Include="products\product_item_full_model.h" />
+    <ClInclude Include="products\product_model.h" />
+    <ClInclude Include="sales\sales_controller.h" />
+    <ClInclude Include="sales\sales_service.h" />
+    <ClInclude Include="sales\sale_model.h" />
+    <ClInclude Include="sales\sale_short_model.h" />
+    <ClInclude Include="server\server.h" />
+    <ClInclude Include="users\users_controller.h" />
+    <ClInclude Include="users\users_service.h" />
+    <ClInclude Include="users\user_add_model.h" />
+    <ClInclude Include="users\user_short_model.h" />
+    <ClInclude Include="warehouse\warehouse_controller.h" />
+    <ClInclude Include="warehouse\warehouse_item_add_model.h" />
+    <ClInclude Include="warehouse\warehouse_item_short_model.h" />
+    <ClInclude Include="warehouse\warehouse_model.h" />
+    <ClInclude Include="warehouse\warehouse_service.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

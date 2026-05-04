@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="bakery-backend/bakery-backend.vcxproj" Id="54b4ac91-9a09-480d-b8ca-72b547a47e9a" />
+</Solution>

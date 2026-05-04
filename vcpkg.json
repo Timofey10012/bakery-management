@@ -1,0 +1,11 @@
+{
+  "name": "bakery",
+  "version-string": "1.0.0",
+  "builtin-baseline": "522253caf47268c1724f486a035e927a42a90092",
+  "dependencies": [
+    "crow",
+    "jwt-cpp",
+    "openssl",
+    "nlohmann-json"
+  ]
+}
