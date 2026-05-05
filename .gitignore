@@ -14,7 +14,6 @@ compile_commands.json
 # =====================
 # VCPKG (локальная сборка)
 # =====================
-vcpkg/
 vcpkg_installed/
 vcpkg/buildtrees/
 vcpkg/packages/
