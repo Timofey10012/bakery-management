@@ -239,7 +239,7 @@ Frontend → HTTP request → Controller → Service → SQL Queries → Databas
 ### 1. Клонирование репозитория
 
 ```
-git clone --recursive https://github.com/Timofey10012/bakery-management
+git clone --recursive https://github.com/Timofey10012/bakery-management.git
 ```
 ```
 cd bakery-management
