@@ -250,7 +250,8 @@ cd bakery-management
 ### 2. Backend (C++)
 
 Требования:
-- CMake 3.20+
+- CMake 3.21+
+- Ninja
 - MSVC (C++20 compiler)
 - Git
 - vcpkg (подключён как submodule)
@@ -272,7 +273,7 @@ cd ..
 cmake --preset default
 ```
 ```
-cmake --build build
+cmake --build --preset default
 ```
 
 Запуск:
@@ -327,6 +328,8 @@ npm start
 
 Проект рассчитан на локальный запуск. HTTPS и деплой не настроены.
 Вся коммуникация происходит через HTTP + JWT.
+
+### Документация
 
 `docs/`
 Содержит API контракт проекта в двух форматах:
