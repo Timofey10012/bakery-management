@@ -24,6 +24,7 @@ target_include_directories(bakery-backend PRIVATE
 # -----------------------
 # PACKAGES (vcpkg)
 # -----------------------
+find_package(Crow CONFIG REQUIRED)
 find_package(jwt-cpp CONFIG REQUIRED)
 find_package(OpenSSL REQUIRED)
 find_package(nlohmann_json CONFIG REQUIRED)
@@ -32,6 +33,7 @@ find_package(nlohmann_json CONFIG REQUIRED)
 # LINK LIBRARIES
 # -----------------------
 target_link_libraries(bakery-backend PRIVATE
+    Crow::Crow
     jwt-cpp::jwt-cpp
     OpenSSL::SSL
     OpenSSL::Crypto
